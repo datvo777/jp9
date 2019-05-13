@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:contentInsetStart="0dp"
+        >
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            >
+            <!-- android:focusable="true"
+            android:focusableInTouchMode="true" để tránh focus vô edittext khi mới mở activity-->
+            <TextView
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Thông tin tài khoản"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="@dimen/text_size_toolbar"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="end"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:text="Lưu"
+                android:layout_marginRight="15dp"
+                android:textColor="@color/black"
+                android:id="@+id/tvSave"
+                android:textSize="@dimen/text_size_toolbar"/>
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/grayNhe">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/white">
+            <View
+
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/xam"></View>
+                <EditText
+                    android:layout_marginRight="15dp"
+                    android:id="@+id/etHotenTK"
+                    android:layout_marginLeft="15dp"
+                    android:hint="Họ và tên"
+                    android:textColor="@color/black"
+                    android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <View
+
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/xam"></View>
+            <EditText
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/etPhoneTK"
+                android:hint="Số điện thoại"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:enabled="false"
+                />
+            <View
+
+                android:layout_margin="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/xam"></View>
+            <EditText
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:hint="Email"
+                android:id="@+id/etEmailTK"
+                android:enabled="false"
+                android:textColor="@color/black"
+                android:background="@android:color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+            <View
+
+                android:layout_marginTop="15dp"
+
+                android:layout_width="match_parent"
+                android:layout_height="7dp"
+                android:background="@color/grayNhe"></View>
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:background="@color/almostWhite"
+                android:layout_height="wrap_content">
+                <CheckBox
+
+                    android:layout_marginLeft="15dp"
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                   android:layout_gravity="center"
+                    android:id="@+id/cbMK"
+                    />
+                <TextView
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="19sp"
+                    android:textAlignment="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginLeft="10dp"
+                    android:text="Đổi mật khẩu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <View
+
+                android:layout_marginTop="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:background="@color/xam"></View>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/linearMK"
+                android:visibility="gone"
+                android:orientation="vertical">
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/inputMKcu"
+                    app:errorTextAppearance="@style/MyAppTheme.TextInputLayout"
+                    android:layout_height="wrap_content">
+                    <e.datvo_000.jp9shop.CustomView.PasswordEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etMatKhauCu"
+                        android:hint="Mật khẩu"
+                        android:paddingBottom="15dp"
+                        android:inputType="text"
+                        android:textColor="@color/orange"
+                        app:useStrike="true"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    app:errorTextAppearance="@style/MyAppTheme.TextInputLayout"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/inputMKmoi">
+                    <e.datvo_000.jp9shop.CustomView.PasswordEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etMatKhauMoi"
+                        android:hint="Mật khẩu mới"
+                        android:inputType="text"
+                        android:paddingBottom="15dp"
+                        android:textColor="@color/orange"
+                        app:useStrike="true"/>
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    app:errorTextAppearance="@style/MyAppTheme.TextInputLayout"
+                    android:id="@+id/inputNLMKmoi"
+                    android:layout_height="wrap_content">
+
+                    <e.datvo_000.jp9shop.CustomView.PasswordEditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/etNhaplaiMK"
+                        android:hint="Nhập lại mật khẩu mới"
+                        android:paddingBottom="15dp"
+                        android:inputType="text"
+                        android:textColor="@color/orange"
+                        app:useStrike="true"/>
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

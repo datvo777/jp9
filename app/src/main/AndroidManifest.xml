@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="e.datvo_000.jp9shop">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+
+     >
+        <!--để theme ở application nên tất cả các Activity đều kế thừa từ theme này-->
+        <activity android:name=".View.ManHinhChao.ManHinhChaoActivity" android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".View.TrangChu.TrangChuActivity" android:screenOrientation="portrait"
+        >
+
+    </activity>
+        <activity android:name=".View.DangNhap.DangNhapActivity" android:screenOrientation="portrait"
+            android:label="Đăng nhập / Đăng ký"
+            >
+
+        </activity>
+        <activity android:name=".View.TrangChu.TimKiem.TimKiemActivity" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".View.ChiTietSP.CTSPActivity" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".View.GioHang.GioHangActivity" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".View.DonHang.XacNhanDonHangActivity" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".View.DonHang.DiaChiGHActivity" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".View.GioHang.GioHangTrongActivity" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".View.DonHang.XacThucActivity" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".View.TaiKhoan.ThongTinTKActivity" android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".View.TaiKhoan.SoDiaChiActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".View.DonHang.DonHangActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".View.DonHang.CTDHActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name=".View.DonHang.CTTTActivity" android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

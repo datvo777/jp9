@@ -1,0 +1,48 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/bgToolbar</item>
+        <!--Màu chính (ví dụ nền AppBar)-->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--Màu nền thanh trạng thái điện thoại-->
+        <item name="colorAccent">@color/black</item>
+        <!--Màu nhấn mạnh (kiểm trong checkbox, gạch chân TextBox ...)-->
+
+        <item name="android:textAppearanceButton">@style/TextAppearance.AppCompat.Button.Custom</item>
+        <!--phải truyền style nó mới chịu-->
+        <item name="android:textColorPrimary">@color/black</item>
+
+        <!--tab dc chọn text màu black-->
+    </style>
+    <!--giữ dc font size mặc định của button-->
+    <style name="TextAppearance.AppCompat.Button.Custom">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+<!--định màu cho menuitem-->
+    <style name="menu_item_color" parent="AppTheme">
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="drawerArrowStyle">@style/change_color_drawerToggle</item>
+    </style>
+    <!--đổi màu ba gạch của drawer-->
+    <style name="change_color_drawerToggle" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/black</item>
+    </style>
+    <!--TextAppearance can thiệp các thuộc tính liên quan đến tab-->
+    <style name="nocapslock" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+    <declare-styleable name="PasswordEditText">
+        <attr name="useStrike" format="boolean"></attr>
+        <attr name="useValidate" format="boolean"></attr>
+    </declare-styleable>
+    <style name="MyAppTheme.TextInputLayout" parent="@android:style/TextAppearance">
+        <item name="android:textColor">@color/red</item>
+    </style>
+    <!--<style name="MyActionBar" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">-->
+    <!--<item name="android:background" >@android:color/transparent</item>-->
+    <!--<item name="background">@android:color/transparent</item>-->
+    <!--</style>-->
+</resources>

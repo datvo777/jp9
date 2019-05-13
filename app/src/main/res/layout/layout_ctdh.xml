@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+
+        >
+        <!--Default value of contentInsetStart is 16dp-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Chi tiết đơn hàng  "
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textAlignment="center"
+
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_weight="8"
+                    android:textAlignment="textEnd"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="Số đơn đặt hàng  "
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+
+
+
+                    />
+                <TextView
+                   android:layout_weight="5.5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tvMaDH"
+                    android:text="37  "
+                    android:textSize="14sp"
+                    android:textColor="@color/black"
+
+                   />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="3"
+                    android:textAlignment="textEnd"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày lập :  "
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+
+
+
+                    />
+                <TextView
+                    android:layout_weight="4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="6/3/2019  06:09:60"
+                    android:id="@+id/tvNgayLap"
+                    android:textSize="12sp"
+                    android:textColor="@color/black"
+
+
+                    />
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.7dp"
+                android:background="@color/grayNhe">
+
+            </View>
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_marginTop="68dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        android:background="@color/grayNhe">
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_weight="6"
+                android:layout_height="40dp"
+                android:background="@color/white"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Tổng cộng : "
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="5dp"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="7"
+                    android:layout_height="wrap_content"
+                    android:text="500,000 đ"
+                    android:id="@+id/tvTC"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center"/>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="5"
+                    android:layout_height="match_parent"
+                    android:id="@+id/linearCTTT"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:id="@+id/tvCTTT"
+                        android:text="Chi tiết thanh toán"
+                        android:textColor="@color/gray"
+                        android:textSize="12sp"/>
+                    <ImageView
+                        android:layout_marginLeft="8dp"
+                        android:layout_width="16dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+
+                        android:src="@drawable/more_26px"/>
+                </LinearLayout>
+            </LinearLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/white"
+               android:orientation="vertical"
+               android:layout_marginTop="15dp"
+               android:layout_marginBottom="15dp">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/person_16px"
+                       android:layout_margin="5dp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Võ Đạt"
+                       android:id="@+id/tvName"
+                       android:textColor="@color/black"
+                       android:layout_margin="5dp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="099999999"
+                       android:id="@+id/tvSDT"
+                       android:textColor="@color/black"
+                       android:layout_margin="5dp"/>
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:src="@drawable/location_16px"
+                       android:layout_margin="5dp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/tvDiachi"
+                       android:text="978 man thiện , Quận 9 , tpHCM"
+                       android:textColor="@color/black"
+                       android:layout_margin="5dp"/>
+
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal">
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="match_parent"
+                       android:id="@+id/imgTrangThai"
+                       android:src="@drawable/circle_yellow_16px"
+                       android:layout_margin="5dp"/>
+                   <TextView
+                       android:id="@+id/tvTrangThai"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Đang giao"
+                       android:textColor="@color/black"
+                       android:layout_margin="5dp"/>
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="1/1/2019"
+                       android:id="@+id/tvNgayGiao"
+                       android:layout_gravity="center"
+                       android:textColor="@color/black"
+                       android:visibility="visible"/>
+
+               </LinearLayout>
+           </LinearLayout>
+            <android.support.v7.widget.RecyclerView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:id="@+id/recyclerCTDH">
+
+            </android.support.v7.widget.RecyclerView>
+            <!--để srcoll thêm-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"></LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

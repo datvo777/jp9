@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_marginBottom="10dp"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_width="0dp"
+            android:layout_weight="6"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="vo dat"
+                android:id="@+id/tvHoTenDC"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="09873456"
+                android:id="@+id/tvSDT"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="567 Man Thiện"
+                android:id="@+id/tvDiachi"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.6"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:id="@+id/btnNext"
+                android:text=">"
+                android:textColor="@color/black"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_margin="9dp"
+        android:layout_height="0.8dp"
+        android:background="@color/gray"></View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <CheckedTextView
+            android:id="@+id/ctvMacDinh"
+            android:textAlignment="center"
+            android:checkMark="?android:attr/listChoiceIndicatorSingle"
+            android:layout_width="wrap_content"
+
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="7.8"
+            android:layout_height="wrap_content"
+            android:text="Mặc định"
+            android:id="@+id/tvMacDinh"
+            android:layout_gravity="center"
+            />
+        <ImageView
+            android:id="@+id/imgXoa"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/trash_24"/>
+    </LinearLayout>
+</LinearLayout>

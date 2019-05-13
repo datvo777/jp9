@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grayNhe">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/toolbarXNDH">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Xác nhận đơn hàng"
+            android:textSize="@dimen/text_size_toolbar"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            />
+    </android.support.v7.widget.Toolbar>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal"
+               android:layout_marginTop="10dp">
+               <LinearLayout
+                   android:layout_width="0dp"
+                   android:layout_weight="8"
+                   android:layout_height="wrap_content"
+                   android:orientation="vertical"
+                   android:background="@color/white"
+                   >
+                   <LinearLayout
+                       android:layout_width="match_parent"
+
+                       android:layout_height="match_parent"
+                       android:background="@color/white"
+                       android:orientation="horizontal">
+                       <TextView
+                            android:layout_marginLeft="8dp"
+                           android:layout_width="wrap_content"
+                           android:text="Tên"
+                           android:id="@+id/tvTenKH"
+                           android:textColor="@color/black"
+                           android:layout_height="wrap_content"
+                           android:background="@color/white"/>
+                       <TextView
+
+                           android:layout_width="wrap_content"
+                           android:layout_marginLeft="12dp"
+                           android:text="093456789"
+                           android:id="@+id/tvSDT"
+                           android:textColor="@color/black"
+                           android:layout_height="wrap_content"
+                           android:background="@color/white"/>
+
+                   </LinearLayout>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@color/white"
+                       android:textColor="@color/black"
+                       android:id="@+id/tvEmail"
+                       android:visibility="gone"
+                       android:layout_marginLeft="8dp"
+                       android:text="dat.vo777@gmail.com"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:background="@color/white"
+                       android:textColor="@color/black"
+                       android:id="@+id/tvDiachi"
+                       android:layout_marginLeft="8dp"
+                       android:text="tuiuit"/>
+               </LinearLayout>
+
+
+               <Button
+                   android:layout_width="0dp"
+                   android:layout_weight="1"
+                   android:layout_height="match_parent"
+                   android:id="@+id/btnNext"
+                   android:text=">"
+                   android:textColor="@color/gray"
+                   android:background="@color/white"/>
+           </LinearLayout>
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="8dp"
+               android:src="@drawable/postal_blank"
+               android:background="@color/white"/>
+           <TextView
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp"
+               android:layout_gravity="center"
+
+               android:text="Phương thức thanh toán"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:background="@color/white">
+               <RadioGroup
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/radioPTTT">
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Thanh toán khi giao hàng"
+                       android:id="@+id/radioTTKGH"/>
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="0.5dp"
+                       android:background="@color/gray"
+                       android:layout_marginLeft="8dp"></View>
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/radioTTThe"
+                       android:text="Thẻ tín dụng"/>
+
+
+               </RadioGroup>
+           </LinearLayout>
+
+           <TextView
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_marginBottom="10dp"
+               android:layout_gravity="center"
+
+               android:text="Phương thức vận chuyển"/>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:background="@color/white">
+               <RadioGroup
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/radioPTGH">
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/radioGHTC"
+                       android:checked="true"
+                       android:text="Giao hàng tiêu chuẩn (2 - 3 ngày) - 30,000 đ"/>
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="0.5dp"
+                       android:background="@color/gray"
+                       android:layout_marginLeft="8dp"></View>
+                   <RadioButton
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:id="@+id/radioGHNhanh"
+                       android:text="Giao hàng nhanh (1 - 2 ngày) 50,000 đ"/>
+
+
+               </RadioGroup>
+           </LinearLayout>
+           <LinearLayout
+               android:layout_marginTop="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="vertical"
+               android:background="@color/white">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_margin="5dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Giá :"
+                       android:textColor="@color/black"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="650.000 đ"
+                       android:id="@+id/tvGia"
+                       android:textColor="@color/black"
+                       android:textAlignment="viewEnd"
+                       />
+               </LinearLayout>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_margin="5dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Phí vận chuyển :"
+                       android:textColor="@color/black"/>
+                   <TextView
+                       android:id="@+id/tvPhi"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="30,000 đ"
+                       android:textColor="@color/black"
+                       android:textAlignment="viewEnd"
+                       />
+               </LinearLayout>
+               <View
+                   android:layout_width="match_parent"
+                   android:layout_height="0.5dp"
+                   android:background="@color/gray"
+                   android:layout_margin="8dp"></View>
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_margin="5dp">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Tổng cộng :"
+                       android:textStyle="bold"
+                       android:textSize="18sp"
+                       android:textColor="@color/black"/>
+                   <TextView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:text="700.000 đ"
+                       android:id="@+id/tvTongCong"
+                       android:textColor="@color/black"
+                       android:textAlignment="viewEnd"
+                       android:textStyle="bold"
+                       android:textSize="18sp"
+                       />
+               </LinearLayout>
+
+           </LinearLayout>
+           <Button
+               android:layout_marginTop="15dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:background="@color/black"
+               android:text="Tiếp tục"
+               android:textColor="@color/white"
+               android:id="@+id/btnTiepTuc"
+               />
+       </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

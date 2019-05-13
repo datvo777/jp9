@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+   >
+    <Button
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:id="@+id/txtSize"
+        android:text="M"
+        android:textColor="@color/gray"
+        android:background="@color/white"
+
+        android:gravity="center"/>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <!--<item android:id="@+id/btsearch"-->
+        <!--android:title="Search"-->
+        <!--android:icon="@drawable/search_white"-->
+        <!--app:showAsAction="always"-->
+        <!--android:visible="true"></item>-->
+
+    <item android:id="@+id/giohang"
+        android:title="Giỏ hàng"
+        android:icon="@drawable/shopping_black"
+        app:showAsAction="always"
+        app:actionLayout="@layout/custom_item_gh">
+        </item>
+    <item android:icon="@drawable/more_black_24px"
+        android:title="more"
+        app:showAsAction="always">
+
+        <menu>
+            <item android:id="@+id/itDangNhap"
+                android:title="Đăng nhập"
+                android:icon="@drawable/login"></item>
+            <item android:id="@+id/itDonHang"
+                android:title="Đơn hàng"
+                android:icon="@drawable/pack_25px"></item>
+            <item android:id="@+id/itSDC"
+                android:title="Sổ địa chỉ"
+                android:icon="@drawable/location_16px"></item>
+            <item android:id="@+id/itDangxuat"
+                android:title="Đăng xuất"
+                android:icon="@drawable/logout_16px"
+                android:visible="false"></item>
+        </menu>
+    </item>
+</menu>
